@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed19b3652f3d3b356e0d951386700a3b",
+    "revision": "65e7845b1620f0b4e83b9620d1ffe14b",
     "url": "/dcloud/index.html"
   },
   {
-    "revision": "ae4eb96ca59dba2679c6",
+    "revision": "0cb7b88d3ba3e621acbb",
     "url": "/dcloud/static/css/main.24f44fde.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dcloud/static/js/3.cf8dc54b.chunk.js"
   },
   {
-    "revision": "ae4eb96ca59dba2679c6",
-    "url": "/dcloud/static/js/main.e03babae.chunk.js"
+    "revision": "0cb7b88d3ba3e621acbb",
+    "url": "/dcloud/static/js/main.82c4c1aa.chunk.js"
   },
   {
     "revision": "d5c87e367b6c05edd640",
