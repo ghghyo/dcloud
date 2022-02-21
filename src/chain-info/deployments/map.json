@@ -1,0 +1,23 @@
+{
+  "4": {
+    "DetermineUser": [
+      "0x491de0Ea60e1990c7038E51F12dfdEeC6601346a",
+      "0xdf593aD8DC445410AC2E766D39df7d5CAB9e7b19",
+      "0xa8cb1b2112404c6F272940ee2aeD56612133b6B4",
+      "0x590EE4596480F8Bf407C209C1cAA4223B0068D50",
+      "0x376b9649bAdD232E03c28932e9926591aC4ADcB3"
+    ],
+    "Faucet": [
+      "0x7c7b23156A6188cc9e5261c3F8083CF0f7CcBc47"
+    ],
+    "UploadDownload": [
+      "0x150C4Dc2AD9347e851fc2b845Ca95553d482cF8b",
+      "0x0E49Fb868f2B6003d88AEd117D6dEDDde5B7a449"
+    ]
+  },
+  "42": {
+    "SimpleStorage": [
+      "0x0E49Fb868f2B6003d88AEd117D6dEDDde5B7a449"
+    ]
+  }
+}
