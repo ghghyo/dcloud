@@ -127,7 +127,11 @@ export const Main = () => {
         if (approveandaddPersonState.status==="Exception" ){
             setalertCode(1)
         }
-        if (approveandaddPersonState.status==="Mining" || approvechangeKeysState.status==="Mining"){
+        if (approveandaddPersonState.status==="Mining"){
+            setalertCode(2)
+        }
+
+        if (approvechangeKeysState.status==="Mining") {
             setalertCode(2)
         }
         if (approvechangeKeysState.status==="Success"){

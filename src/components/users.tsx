@@ -279,14 +279,34 @@ function Users() {
             return reset()
             
         }
-        if (approveUploadState.status==="Exception" ||approveFaucetState.status==="Exception" || approvedownloadState.status==="Exception"){
+        if (approveUploadState.status==="Exception"){
             setcurrentResponse(30)
             return reset()
     
         }
-        if (approveUploadState.status==="Mining" || approveFaucetState.status==="Mining" || approvedownloadState.status==="Mining"){
+
+        if (approveFaucetState.status === "Exception"){
+            setcurrentResponse(30)
+            return reset2()
+        }
+
+        if (approvedownloadState.status === "Exception"){
+            setcurrentResponse(30)
+            return resetdownload()
+
+        }
+        if (approveUploadState.status==="Mining") {
             setcurrentResponse(20)
         }
+
+        if (approveFaucetState.status === "Mining"){
+            setcurrentResponse(20)
+        }
+
+        if (approvedownloadState.status==="Mining"){
+            setcurrentResponse(20)
+        }
+
         if (approveFaucetState.status==="Success"){
             setcurrentResponse(11)
         }
