@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dcloud/static/css/main.24f44fde.chunk.css",
+    "main.js": "/dcloud/static/js/main.e03babae.chunk.js",
+    "main.js.map": "/dcloud/static/js/main.e03babae.chunk.js.map",
+    "runtime-main.js": "/dcloud/static/js/runtime-main.39f0e90c.js",
+    "runtime-main.js.map": "/dcloud/static/js/runtime-main.39f0e90c.js.map",
+    "static/js/2.62c86b91.chunk.js": "/dcloud/static/js/2.62c86b91.chunk.js",
+    "static/js/2.62c86b91.chunk.js.map": "/dcloud/static/js/2.62c86b91.chunk.js.map",
+    "static/js/3.cf8dc54b.chunk.js": "/dcloud/static/js/3.cf8dc54b.chunk.js",
+    "static/js/3.cf8dc54b.chunk.js.map": "/dcloud/static/js/3.cf8dc54b.chunk.js.map",
+    "index.html": "/dcloud/index.html",
+    "precache-manifest.a136f6df975e14cf84939ccbf97d81c4.js": "/dcloud/precache-manifest.a136f6df975e14cf84939ccbf97d81c4.js",
+    "service-worker.js": "/dcloud/service-worker.js",
+    "static/css/main.24f44fde.chunk.css.map": "/dcloud/static/css/main.24f44fde.chunk.css.map",
+    "static/js/2.62c86b91.chunk.js.LICENSE.txt": "/dcloud/static/js/2.62c86b91.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39f0e90c.js",
+    "static/js/2.62c86b91.chunk.js",
+    "static/css/main.24f44fde.chunk.css",
+    "static/js/main.e03babae.chunk.js"
+  ]
+}
