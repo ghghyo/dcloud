@@ -10,6 +10,7 @@ import { useEthers} from "@usedapp/core"
 import { TabContext, TabList, TabPanel } from "@material-ui/lab"
 import { Tab, Box, Grid, Paper,styled} from "@material-ui/core"
 
+// not downloading except during particular renders, not producing alerts
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -224,7 +225,8 @@ function Users() {
     useEffect(() => {
 
         if(approvedownloadState.status==="Success"){
-            setcurrentResponse(10)
+            setcurrentResponse(13)
+            console.log("hello")
             const url = 'https://gateway.pinata.cloud/ipfs/' + downloadhash;
 
             //get a file using the hash
@@ -238,11 +240,14 @@ function Users() {
                 document.body.appendChild(link);
                 link.click();
             });
+            console.log("bye")
+            return resetdownload()
             
         }
 
         if(approveUploadState.status==="Success"){
             console.log(approveUploadState)
+            setcurrentResponse(10)
 
             const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
             //@ts-ignore
@@ -258,7 +263,7 @@ function Users() {
             });
             data.append('pinataMetadata', metadata);
         
-            setcurrentResponse(10)
+            
             axios
             .post(url, data, {
                 maxContentLength: Infinity,
@@ -280,7 +285,7 @@ function Users() {
             
         }
         if (approveUploadState.status==="Exception"){
-            setcurrentResponse(30)
+            setcurrentResponse(31)
             return reset()
     
         }
@@ -291,12 +296,12 @@ function Users() {
         }
 
         if (approvedownloadState.status === "Exception"){
-            setcurrentResponse(30)
+            setcurrentResponse(33)
             return resetdownload()
 
         }
         if (approveUploadState.status==="Mining") {
-            setcurrentResponse(20)
+            setcurrentResponse(21)
         }
 
         if (approveFaucetState.status === "Mining"){
@@ -304,7 +309,7 @@ function Users() {
         }
 
         if (approvedownloadState.status==="Mining"){
-            setcurrentResponse(20)
+            setcurrentResponse(23)
         }
 
         if (approveFaucetState.status==="Success"){
@@ -494,12 +499,12 @@ function Users() {
                 <AlertTitle>In Progress</AlertTitle>
                 <strong>Your file is uploading!</strong>
                 </Alert>
-            ) : currentResponse===20? (
+            ) : currentResponse===21? (
                 <Alert severity="info">
             <AlertTitle>Mining</AlertTitle>
             <strong>Your transaction is mining ... Please wait</strong>
             </Alert>   
-            ) : currentResponse===30?(
+            ) : currentResponse===31?(
                 <Alert onClose={() => {setcurrentResponse(0)}} severity="error">
             <AlertTitle>Error</AlertTitle>
             <strong>You either denied the transaction or do not have the correct permissions</strong>
@@ -557,18 +562,18 @@ function Users() {
                 )}
             <div style={{ marginTop:"25vw" }}>
                 
-                {currentResponse===10? (
+                {currentResponse===13? (
                                                   
                   <Alert onClose={() => {setcurrentResponse(0)}} severity="success">
                   <AlertTitle>Success</AlertTitle>
                   <strong>Your file will now download</strong>
                   </Alert>
-              ) : currentResponse===20? (
+              ) : currentResponse===23? (
                   <Alert severity="info">
               <AlertTitle>Mining</AlertTitle>
               <strong>Your transaction is mining ... Please wait</strong>
               </Alert>   
-              ) : currentResponse===30?(
+              ) : currentResponse===33?(
                   <Alert onClose={() => {setcurrentResponse(0)}} severity="error">
               <AlertTitle>Error</AlertTitle>
               <strong>You either denied the transaction or do not have the correct permissions</strong>
