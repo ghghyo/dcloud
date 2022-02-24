@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dcloud/static/css/main.24f44fde.chunk.css",
-    "main.js": "/dcloud/static/js/main.82c4c1aa.chunk.js",
-    "main.js.map": "/dcloud/static/js/main.82c4c1aa.chunk.js.map",
+    "main.js": "/dcloud/static/js/main.c19b7bce.chunk.js",
+    "main.js.map": "/dcloud/static/js/main.c19b7bce.chunk.js.map",
     "runtime-main.js": "/dcloud/static/js/runtime-main.39f0e90c.js",
     "runtime-main.js.map": "/dcloud/static/js/runtime-main.39f0e90c.js.map",
     "static/js/2.62c86b91.chunk.js": "/dcloud/static/js/2.62c86b91.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.cf8dc54b.chunk.js": "/dcloud/static/js/3.cf8dc54b.chunk.js",
     "static/js/3.cf8dc54b.chunk.js.map": "/dcloud/static/js/3.cf8dc54b.chunk.js.map",
     "index.html": "/dcloud/index.html",
-    "precache-manifest.65e79ec8f9157a9512dd83cb8ca3c2bc.js": "/dcloud/precache-manifest.65e79ec8f9157a9512dd83cb8ca3c2bc.js",
+    "precache-manifest.3e175903f5a7549ecbddf020ea0fb5ca.js": "/dcloud/precache-manifest.3e175903f5a7549ecbddf020ea0fb5ca.js",
     "service-worker.js": "/dcloud/service-worker.js",
     "static/css/main.24f44fde.chunk.css.map": "/dcloud/static/css/main.24f44fde.chunk.css.map",
     "static/js/2.62c86b91.chunk.js.LICENSE.txt": "/dcloud/static/js/2.62c86b91.chunk.js.LICENSE.txt"
@@ -19,6 +19,6 @@
     "static/js/runtime-main.39f0e90c.js",
     "static/js/2.62c86b91.chunk.js",
     "static/css/main.24f44fde.chunk.css",
-    "static/js/main.82c4c1aa.chunk.js"
+    "static/js/main.c19b7bce.chunk.js"
   ]
 }
