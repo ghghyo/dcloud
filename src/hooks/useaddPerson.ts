@@ -55,6 +55,6 @@ export const UseaddPerson = () => {
     }
     }, [approveandaddPersonState, userType])
 
-    return { approvePerson, approveandaddPersonState }
+    return { approvePerson, approveandaddPersonState, reset }
     
 }

@@ -65,10 +65,10 @@ export const Main = () => {
     const [showOrgNames, setshowOrgNames] = useState(false)
     const [userType, setuserType] =useState<number>(0)
     const [orgNum, setorgNum] =useState<number>(0)
-    const { approvePerson, approveandaddPersonState } = UseaddPerson() ?? []
-    const [alertCode, setalertCode] = useState(0);
+    const { approvePerson, approveandaddPersonState, reset } = UseaddPerson() ?? []
+    const [alertCode, setalertCode] = useState<number>(0);
     const [wrongInput,setwrongInput] = useState(false);
-    const {approvechange, approvechangeKeysState} = AddUsersBeta() ?? []
+    const {approvechange, approvechangeKeysState, reset3} = AddUsersBeta() ?? []
 
     const AddBetaTesters = () => {
         if (validEthereum.test(NRO.current["value"]) && validEthereum.test(NSA.current["value"]) && validEthereum.test(CIA.current["value"]) && validEthereum.test(AWS.current["value"])) {
@@ -126,6 +126,7 @@ export const Main = () => {
         }
         if (approveandaddPersonState.status==="Exception" ){
             setalertCode(1)
+            reset()
         }
         if (approveandaddPersonState.status==="Mining"){
             setalertCode(2)
@@ -136,9 +137,10 @@ export const Main = () => {
         }
         if (approvechangeKeysState.status==="Success"){
             setalertCode(3)
+            reset3()
         }
 
-    }, [isConnected,showOrgNames, showOrgNamesProvider,userType,approveandaddPersonState, approvechangeKeysState])
+    }, [isConnected,showOrgNames, showOrgNamesProvider,userType,approveandaddPersonState, approvechangeKeysState,alertCode])
 
     const [value, setValue] = React.useState('1');
 

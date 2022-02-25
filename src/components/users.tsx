@@ -314,8 +314,9 @@ function Users() {
 
         if (approveFaucetState.status==="Success"){
             setcurrentResponse(11)
+            reset2()
         }
-        }, [approveUploadState, approveFaucetState, approvedownloadState])
+        }, [approveUploadState, approveFaucetState, approvedownloadState,currentResponse])
 
    
 
